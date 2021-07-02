@@ -163,15 +163,9 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped>
-.spinner.spinner-right {
-  padding-right: 3.5rem !important;
-}
-</style>
-
 <script>
 import { mapState } from "vuex";
-import { LOGIN, LOGOUT } from "@/core/services/store/auth.module";
+import { LOGIN, LOGOUT } from "@/Metronic/Core/services/store/auth.module.js";
 
 import { validationMixin } from "vuelidate";
 import { email, minLength, required } from "vuelidate/lib/validators";
@@ -254,3 +248,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .spinner.spinner-right {
+    padding-right: 3.5rem !important;
+  }
+</style>
